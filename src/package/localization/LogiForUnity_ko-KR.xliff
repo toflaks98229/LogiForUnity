@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2">
+  <file original="$LogiForUnity___@general" source-language="en-US" target-language="ko-KR" datatype="plaintext">
+    <header>
+      <generator>LogiPluginService 6.3.1.2628</generator>
+      <timestamp>2026-07-15T09-52-13-450</timestamp>
+      <computer>d964b6b44d37bca429bd2e8d9dbb14fe3d201db487542c378ac0d839ec0e5c38</computer>
+    </header>
+    <body>
+      <group id="@general">
+        <trans-unit id="$LogiForUnity___General___ResetDisplayNameTemplate" translate="yes">
+          <source>Reset %</source>
+          <target>리셋 %</target>
+        </trans-unit>
+      </group>
+      <group id="@modes">
+        <trans-unit id="$LogiForUnity___ModeName___main" translate="yes">
+          <source>Main</source>
+          <target>메인</target>
+        </trans-unit>
+      </group>
+      <group id="@resources" />
+    </body>
+  </file>
+  <file original="$LogiForUnity___main" source-language="en-US" target-language="ko-KR" datatype="plaintext">
+    <body>
+      <group id="@commands">
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand">
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___play" translate="yes">
+            <source>Play</source>
+            <target>재생</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___pause" translate="yes">
+            <source>Pause</source>
+            <target>일시정지</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___step" translate="yes">
+            <source>Step</source>
+            <target>한 프레임</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___tool.hand" translate="yes">
+            <source>Hand</source>
+            <target>손</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___tool.move" translate="yes">
+            <source>Move</source>
+            <target>이동</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___tool.rotate" translate="yes">
+            <source>Rotate</source>
+            <target>회전</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___tool.scale" translate="yes">
+            <source>Scale</source>
+            <target>크기</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___tool.rect" translate="yes">
+            <source>Rect</source>
+            <target>사각형</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___tool.transform" translate="yes">
+            <source>Transform</source>
+            <target>트랜스폼</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___frame" translate="yes">
+            <source>Frame Selected</source>
+            <target>선택 항목 프레임</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___pivot.toggle" translate="yes">
+            <source>Pivot / Center</source>
+            <target>피벗 / 중심</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___space.toggle" translate="yes">
+            <source>Global / Local</source>
+            <target>전역 / 로컬</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___undo" translate="yes">
+            <source>Undo</source>
+            <target>실행 취소</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___redo" translate="yes">
+            <source>Redo</source>
+            <target>다시 실행</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___duplicate" translate="yes">
+            <source>Duplicate</source>
+            <target>복제</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___gameobject.empty" translate="yes">
+            <source>New GameObject</source>
+            <target>새 게임오브젝트</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___save" translate="yes">
+            <source>Save Scenes</source>
+            <target>씬 저장</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___build.settings" translate="yes">
+            <source>Build Settings</source>
+            <target>빌드 설정</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___window.scene" translate="yes">
+            <source>Scene</source>
+            <target>씬</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___window.game" translate="yes">
+            <source>Game</source>
+            <target>게임</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___window.inspector" translate="yes">
+            <source>Inspector</source>
+            <target>인스펙터</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___window.hierarchy" translate="yes">
+            <source>Hierarchy</source>
+            <target>하이어라키</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___window.project" translate="yes">
+            <source>Project</source>
+            <target>프로젝트</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___window.console" translate="yes">
+            <source>Console</source>
+            <target>콘솔</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand___ping" translate="yes">
+            <source>Ping Bridge</source>
+            <target>브리지 핑</target>
+          </trans-unit>
+        </group>
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeInstallCommand">
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeInstallCommand___install" translate="yes">
+            <source>Install Bridge</source>
+            <target>브리지 설치</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeInstallCommand___uninstall" translate="yes">
+            <source>Remove Bridge</source>
+            <target>브리지 제거</target>
+          </trans-unit>
+        </group>
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand">
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___lock-view" translate="yes">
+            <source>Lock View</source>
+            <target>뷰 고정</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___maximize-view" translate="yes">
+            <source>Maximize View</source>
+            <target>뷰 최대화</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___new-child" translate="yes">
+            <source>New Child</source>
+            <target>새 자식 오브젝트</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___save" translate="yes">
+            <source>Save</source>
+            <target>저장</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___save-as" translate="yes">
+            <source>Save As</source>
+            <target>다른 이름으로 저장</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___build-and-run" translate="yes">
+            <source>Build and Run</source>
+            <target>빌드 후 실행</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___window-animation" translate="yes">
+            <source>Animation</source>
+            <target>애니메이션</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand___window-profiler" translate="yes">
+            <source>Profiler</source>
+            <target>프로파일러</target>
+          </trans-unit>
+        </group>
+        <trans-unit id="$LogiForUnity___#DynamicFolder" translate="yes">
+          <source>Dynamic Folder</source>
+          <target>다이내믹 폴더</target>
+        </trans-unit>
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeCommand" />
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeInstallCommand" />
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityHotkeyCommand" />
+      </group>
+      <group id="@adjustments">
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment">
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___move.x" translate="yes">
+            <source>Move X</source>
+            <target>이동 X</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___move.y" translate="yes">
+            <source>Move Y</source>
+            <target>이동 Y</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___move.z" translate="yes">
+            <source>Move Z</source>
+            <target>이동 Z</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___rotate.x" translate="yes">
+            <source>Rotate X</source>
+            <target>회전 X</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___rotate.y" translate="yes">
+            <source>Rotate Y</source>
+            <target>회전 Y</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___rotate.z" translate="yes">
+            <source>Rotate Z</source>
+            <target>회전 Z</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___scene.zoom" translate="yes">
+            <source>Scene Zoom</source>
+            <target>씬 확대/축소</target>
+          </trans-unit>
+          <trans-unit id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment___time.scale" translate="yes">
+            <source>Time Scale</source>
+            <target>시간 배율</target>
+          </trans-unit>
+        </group>
+        <group id="$LogiForUnity___Loupedeck.LogiForUnityPlugin.UnityBridgeAdjustment" />
+      </group>
+      <group id="@groups">
+        <trans-unit id="$LogiForUnity___GroupName___A4045043F52A64980011" translate="yes">
+          <source>Bridge · Playback</source>
+          <target>브리지 · 재생</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___A7E1B1C2FFB604B2000E" translate="yes">
+          <source>Bridge · Tools</source>
+          <target>브리지 · 툴</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___B7284713AA416D91000E" translate="yes">
+          <source>Bridge · Scene</source>
+          <target>브리지 · 씬</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___8E584925ABA04F79000D" translate="yes">
+          <source>Bridge · Edit</source>
+          <target>브리지 · 편집</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___D70945FCF0542727000D" translate="yes">
+          <source>Bridge · File</source>
+          <target>브리지 · 파일</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___C1676DFA47829B9A0010" translate="yes">
+          <source>Bridge · Windows</source>
+          <target>브리지 · 창</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___47FC617C6ED810810014" translate="yes">
+          <source>Bridge · Diagnostics</source>
+          <target>브리지 · 진단</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___620F956890A92B8E0006" translate="yes">
+          <source>Bridge</source>
+          <target>브리지</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___92160E1CDDF65C8E0005" translate="yes">
+          <source>Tools</source>
+          <target>툴</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___D06D88A2FFC5A57C0008" translate="yes">
+          <source>Playback</source>
+          <target>재생</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___3141692F0C1C04BE000A" translate="yes">
+          <source>Scene View</source>
+          <target>씬 뷰</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___983AFF4B81BAB75D0004" translate="yes">
+          <source>Edit</source>
+          <target>편집</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___E0EBFC22C66E8F0B0004" translate="yes">
+          <source>File</source>
+          <target>파일</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___45C25E9E2FA8C6F60007" translate="yes">
+          <source>Windows</source>
+          <target>창</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___99A501A74D9F9AC10012" translate="yes">
+          <source>Bridge · Transform</source>
+          <target>브리지 · 트랜스폼</target>
+        </trans-unit>
+        <trans-unit id="$LogiForUnity___GroupName___ADF326679C19621E000D" translate="yes">
+          <source>Bridge · View</source>
+          <target>브리지 · 뷰</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
