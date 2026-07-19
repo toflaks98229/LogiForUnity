@@ -53,6 +53,16 @@ namespace Loupedeck.LogiForUnityPlugin
             this.ActionImageChanged();
         }
 
+        // 커스텀 SVG/PNG 가 있으면 그것을, 없으면 코드 벡터 아이콘(설치=트레이 화살표, 제거=휴지통)을 굽는다.
+        protected override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)
+        {
+            var label = actionParameter == "uninstall" ? "Remove Bridge" : "Install Bridge";
+            var accent = actionParameter == "uninstall"
+                ? new BitmapColor(229, 57, 53)
+                : new BitmapColor(76, 175, 80);
+            return UnityIcons.Get(actionParameter, label, accent, imageSize);
+        }
+
         // 버튼에 현재 설치 상태를 그대로 보여준다. 사용자가 무슨 일이 일어났는지 알 수 있어야 한다.
         protected override String GetCommandDisplayName(String actionParameter, PluginImageSize imageSize)
         {

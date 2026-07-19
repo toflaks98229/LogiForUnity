@@ -3,8 +3,8 @@
   <PropertyGroup>
     <!-- System.Management (WMI) throws PlatformNotSupportedException unless the target framework is
          Windows-flavoured. The mac build keeps the portable TFM and falls back to no project detection. -->
-    <TargetFramework Condition="$(OS) == 'Windows_NT'">net8.0-windows</TargetFramework>
-    <TargetFramework Condition="$(OS) != 'Windows_NT'">net8.0</TargetFramework>
+    <TargetFramework Condition="$(OS) == 'Windows_NT'">net10.0-windows</TargetFramework>
+    <TargetFramework Condition="$(OS) != 'Windows_NT'">net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <RootNamespace>Loupedeck.LogiForUnityPlugin</RootNamespace>
@@ -54,10 +54,12 @@
     <EmbeddedResource Include="UnityBridge\**\*" />
   </ItemGroup>
 
-  <!-- Button artwork. Drop a PNG named after the action parameter (dots become hyphens, e.g. tool-move.png)
-       and it is picked up automatically; actions without artwork fall back to a procedural icon. -->
+  <!-- Button artwork. Drop an SVG or PNG named after the action parameter (dots become hyphens,
+       e.g. tool-move.svg / tool-move.png) and it is picked up automatically; SVG wins over PNG, and
+       actions without artwork fall back to a procedural icon and then to the label. -->
   <ItemGroup>
     <EmbeddedResource Include="Resources\Icons\**\*.png" />
+    <EmbeddedResource Include="Resources\Icons\**\*.svg" />
   </ItemGroup>
 
   <Target Name="CopyPackage" AfterTargets="PostBuildEvent">

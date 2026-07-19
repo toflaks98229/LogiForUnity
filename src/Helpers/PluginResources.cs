@@ -50,6 +50,12 @@ namespace Loupedeck.LogiForUnityPlugin
         // Throws `FileNotFoundException` if the resource file is not found.
         public static BitmapImage ReadImage(String resourceName) => PluginResources._assembly.ReadImage(PluginResources.FindFile(resourceName));
 
+        // Loads a vector (SVG) resource as a BitmapImage. SVG must be read through BitmapImage.FromResource
+        // so the plugin service keeps it as a vector and can recolor/scale it per the device settings.
+        // Throws `FileNotFoundException` if the resource file is not found.
+        public static BitmapImage ReadVectorImage(String resourceName) =>
+            BitmapImage.FromResource(PluginResources._assembly, PluginResources.FindFile(resourceName));
+
         // Extracts the specified resource file to the given file path in the file system.
         // Throws `FileNotFoundException` if the resource file is not found, or a system exception if the output file cannot be written.
         public static void ExtractFile(String resourceName, String filePathName)

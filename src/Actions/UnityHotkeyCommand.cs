@@ -15,7 +15,21 @@ namespace Loupedeck.LogiForUnityPlugin
         private const String GroupFile = "File";
         private const String GroupWindows = "Windows";
 
+        // 그룹별 강조색. 코드 벡터 아이콘과 라벨 폴백의 색으로 쓴다. 브리지 커맨드와 색을 맞춘다.
+        private static readonly Dictionary<String, BitmapColor> GroupAccents = new Dictionary<String, BitmapColor>
+        {
+            [GroupTools] = new BitmapColor(33, 150, 243),
+            [GroupPlayback] = new BitmapColor(76, 175, 80),
+            [GroupScene] = new BitmapColor(156, 39, 176),
+            [GroupEdit] = new BitmapColor(255, 152, 0),
+            [GroupFile] = new BitmapColor(0, 172, 193),
+            [GroupWindows] = new BitmapColor(120, 124, 130),
+        };
+
         private readonly Dictionary<String, KeyboardShortcut> _shortcuts = new Dictionary<String, KeyboardShortcut>();
+
+        // 아이콘을 그릴 때 필요한 그룹. 파라미터에서 그룹을 되찾을 방법이 없어 따로 보관한다.
+        private readonly Dictionary<String, String> _groups = new Dictionary<String, String>();
 
         public UnityHotkeyCommand()
             : base()
@@ -70,7 +84,21 @@ namespace Loupedeck.LogiForUnityPlugin
         private void AddHotkey(String name, String displayName, String groupName, VirtualKeyCode key, ModifierKey modifiers = ModifierKey.None)
         {
             this._shortcuts.Add(name, new KeyboardShortcut(key, modifiers));
+            this._groups.Add(name, groupName);
             this.AddParameter(name, displayName, groupName);
+        }
+
+        // 커스텀 SVG/PNG 가 있으면 그것을, 없으면 코드 벡터 아이콘을, 그마저 없으면 라벨(이름)을 굽는다.
+        protected override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)
+        {
+            if (!this._groups.TryGetValue(actionParameter ?? String.Empty, out var groupName))
+            {
+                return base.GetCommandImage(actionParameter, imageSize);
+            }
+
+            var label = this.GetParameter(actionParameter)?.DisplayName ?? actionParameter;
+            var accent = GroupAccents.TryGetValue(groupName, out var color) ? color : new BitmapColor(120, 124, 130);
+            return UnityIcons.Get(actionParameter, label, accent, imageSize);
         }
 
         protected override void RunCommand(String actionParameter)
