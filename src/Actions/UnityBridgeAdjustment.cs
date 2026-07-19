@@ -100,5 +100,12 @@ namespace Loupedeck.LogiForUnityPlugin
             this.EnsureSubscribed();
             return this.Bridge?.TryGetAdjustmentValue(actionParameter) ?? "—";
         }
+
+        // 커스텀 아트워크(SVG/PNG)가 있으면 아이콘으로 쓴다. 값 텍스트는 프레임워크가 GetAdjustmentValue 로 따로 그린다.
+        // 아트워크가 없으면 기본 렌더(이름 + 현재값)를 그대로 유지한다. 라벨을 이미지에 굽지 않아 값 표시가 가려지지 않는다.
+        protected override BitmapImage GetAdjustmentImage(String actionParameter, PluginImageSize imageSize) =>
+            UnityIcons.TryGetEmbedded(actionParameter, imageSize, out var image)
+                ? image
+                : base.GetAdjustmentImage(actionParameter, imageSize);
     }
 }

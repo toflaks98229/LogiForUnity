@@ -51,6 +51,9 @@ namespace Loupedeck.LogiForUnityPlugin
 
                 case "ping": Ping(canvas, color, stroke); return true;
 
+                case "install": InstallTray(canvas, color, stroke); return true;
+                case "uninstall": Trash(canvas, color, stroke); return true;
+
                 default: return false;
             }
         }
@@ -226,6 +229,35 @@ namespace Loupedeck.LogiForUnityPlugin
             FillCircleN(c, color, 0.5f, 0.5f, 0.08f);
             Circle(c, color, stroke, 0.5f, 0.5f, 0.20f);
             Circle(c, color, stroke, 0.5f, 0.5f, 0.32f);
+        }
+
+        // 설치: 트레이 위로 내려오는 다운로드 화살표.
+        private static void InstallTray(BitmapBuilder c, BitmapColor color, Single stroke)
+        {
+            Line(c, color, stroke, 0.5f, 0.20f, 0.5f, 0.56f);
+            ArrowHead(c, color, stroke, 0.5f, 0.58f, 0f, 1f);
+            Line(c, color, stroke, 0.26f, 0.70f, 0.26f, 0.80f);
+            Line(c, color, stroke, 0.26f, 0.80f, 0.74f, 0.80f);
+            Line(c, color, stroke, 0.74f, 0.80f, 0.74f, 0.70f);
+        }
+
+        // 제거: 뚜껑 달린 휴지통.
+        private static void Trash(BitmapBuilder c, BitmapColor color, Single stroke)
+        {
+            // 뚜껑과 손잡이
+            Line(c, color, stroke, 0.26f, 0.30f, 0.74f, 0.30f);
+            Line(c, color, stroke, 0.42f, 0.30f, 0.44f, 0.23f);
+            Line(c, color, stroke, 0.44f, 0.23f, 0.56f, 0.23f);
+            Line(c, color, stroke, 0.56f, 0.23f, 0.58f, 0.30f);
+
+            // 통
+            Line(c, color, stroke, 0.32f, 0.30f, 0.36f, 0.80f);
+            Line(c, color, stroke, 0.68f, 0.30f, 0.64f, 0.80f);
+            Line(c, color, stroke, 0.36f, 0.80f, 0.64f, 0.80f);
+
+            // 세로 홈
+            Line(c, color, stroke, 0.45f, 0.38f, 0.46f, 0.72f);
+            Line(c, color, stroke, 0.55f, 0.38f, 0.54f, 0.72f);
         }
 
         // ---------------------------------------------------------------- 원시 도형
